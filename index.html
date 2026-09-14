@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Student Performance Dashboard</h1>
+
+    <div class="controls">
+        <input id="searchInput" placeholder="Enter student name">
+
+        <select id="blockFilter">
+            <option value="All">All</option>
+            <option value="31-ITE-01">31-ITE-01</option>
+            <option value="31-ITE-02">31-ITE-02</option>
+            <option value="31-ITE-03">31-ITE-03</option>
+        </select>
+
+        <select id="statusFilter">
+            <option value="All">All</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Passed">Passed</option>
+            <option value="Needs Improvement">Needs Improvement</option>
+            <option value="Failed">Failed</option>
+        </select>
+
+        <button id="applyBtn">Apply Filters</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <section class="summary">
+        <p>Class Average: <span id="classAverage"></span></p>
+        <p>Passing Students: <span id="passingCount"></span></p>
+        <p>Displayed Students: <span id="displayedCount"></span></p>
+        <p>Top Student: <span id="topStudent"></span></p>
+    </section>
+
+    <div id="messageArea"></div>
+
+    <div id="studentList"></div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
